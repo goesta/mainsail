@@ -91,6 +91,14 @@ export const getDefaultState = (): GuiState => {
                 { 'name': 'miniconsole', visable: true },
             ]
         },
+        github: {
+            isEnabled: false,
+            authToken: '',
+            user: '',
+            repo: '',
+            branch: '',
+            owner: ''
+        },
         webcam: {
             selectedCam: '',
             boolDashboard: false,

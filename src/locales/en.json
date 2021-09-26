@@ -49,6 +49,10 @@
 			"DescriptionPreviouslyTemperatureLimited": "rPi uC (3A+/3B+ only) temperature was at least once above the soft limit (default 60C) since last power-on."
 		}
 	},
+	"GithubDialog": {
+		"cancel": "Don't commit",
+		"commit": "Commit"
+	},
     "ConnectionDialog": {
         "Connecting": "Connecting to {host}",
         "Failed": "Connection failed",
@@ -266,12 +270,6 @@
 			"Restart": "Restart",
 			"FirmwareRestart": "Firmware Restart"
 		},
-		"KlipperWarningsPanel": {
-			"KlipperWarnings": "Klipper Warnings",
-			"DownloadLog": "download log",
-			"DeprecatedOption": "Option '{option}' in section '{section}' is deprecated.",
-			"DeprecatedValue": "Value '{value}' in option '{option}' in section '{section}' is deprecated."
-		},
 		"MiniconsolePanel": {
 			"Headline": "Console",
 			"SetupConsole": "Setup Console",
@@ -336,13 +334,7 @@
             "Total": "Total",
             "Slicer": "Slicer",
             "ETA": "ETA",
-            "Unknown": "Unknown",
-			"ExcludeObjectHeadline": "Exclude Object",
-			"ExcludeObjectText": "Do you really want to exclude \"{name}\"?",
-			"Cancel": "cancel",
-			"ExcludeObject": "Exclude object",
-			"CountObjects": "{count} Objects",
-			"Canceled": "Canceled"
+            "Unknown": "Unknown"
 		},
 		"ToolsPanel": {
 			"Headline": "Temperatures",
@@ -597,20 +589,33 @@
 		},
 		"GCodeViewerTab": {
 			"GCodeViewer": "G-Code Viewer",
+			"ShowCursor" : "Show Cursor",
 			"ExtruderColor" : "Extruder Colors",
+			"ColorMode" : "Color Mode",
 			"FeedRate": "Feed Rate",
 			"Extruder" : "Extruder",
 			"BackgroundColor" : "Background Color",
 			"GridColor": "Grid Color",
 			"ShowAxes": "Show Axes",
 			"MinFeed" :"Min Feed Rate",
-			"MaxFeed" : "Max Feed Rate"
+			"MaxFeed" : "Max Feed Rate",
+			"MinColor" : "Min Feed Rate Color",
+			"MaxColor" : "Max Feed Rate Color",
+			"ProgressColor" : "Progress Color"
+		},
+		"GithubTab": {
+			"Github": "Github",
+			"Enable": "Enable",
+			"User": "GitHub User",
+			"AuthToken": "Auth Token",
+			"Repo": "Repo",
+			"Branch": "Branch",
+			"Owner": "Repo Owner"
 		}
 	},
 	"GCodeViewer":{
 		"Title" : "G-Code Viewer",
-		"LoadLocal": "Local File",
-		"ClearLoadedFile": "Clear",
+		"LoadLocal": "Load Local File",
 		"ResetCamera": "Reset Camera",
 		"RenderQuality" : "Render Quality",
 		"Low" : "Low",
@@ -618,20 +623,9 @@
 		"High" : "High",
 		"Ultra" : "Ultra",
 		"Max" : "Max",
-		"ShowToolhead":"Show Toolhead",
-		"ShowTravelMoves":"Show Travel Moves",
-		"ShowObjectSelection":"Show Object Selection",
-		"HDRendering":"HD Rendering (Round Extrusions)",
 		"ForceLineRendering":"Force Line Rendering",
-		"Transparency":"Transparency",
-		"VoxelMode":"Voxel Mode (ASMBL)",
-		"SpecularLighting":"Specular Lighting",
 		"ReloadRequired" : "Reload required",
-		"LoadCurrentFile": "Current file",
-		"Tracking": "Tracking",
-		"ZClip" : "Z Clipping",
-		"Rendering" : "Rendering",
-		"Downloading" : "Downloading",
-		"ColorMode" : "Color Mode"
+		"TrackPrint": "Track Print",
+		"ZClip" : "Z Clipping"
 	}
 }

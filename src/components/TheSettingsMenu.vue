@@ -4,7 +4,7 @@
             <v-icon>mdi-cogs</v-icon>
         </v-btn>
         <v-dialog v-model="showSettings" width="900" persistent :fullscreen="isMobile">
-            <v-card style="overflow: hidden;" :height="isMobile ? 0 : 548">
+            <v-card style="overflow: hidden;" :height="isMobile ? 0 : 648">
                 <v-toolbar flat dense>
                     <v-toolbar-title>
                         <span class="subheading"><v-icon left>mdi-cogs</v-icon>{{ $t('Settings.InterfaceSettings') }}</span>
@@ -63,6 +63,8 @@ import SettingsRemotePrintersTab from '@/components/settings/SettingsRemotePrint
 import SettingsThemeTab from '@/components/settings/SettingsThemeTab.vue'
 import SettingsDashboardTab from '@/components/settings/SettingsDashboardTab.vue'
 import SettingsGCodeViewerTab from '@/components/settings/SettingsGCodeViewerTab.vue'
+import SettingsGithubTab from '@/components/settings/SettingsGithubTab.vue'
+
 @Component({
     components: {
         SettingsThemeTab,
@@ -74,7 +76,8 @@ import SettingsGCodeViewerTab from '@/components/settings/SettingsGCodeViewerTab
         SettingsWebcamTab,
         SettingsGeneralTab,
         SettingsDashboardTab,
-        SettingsGCodeViewerTab
+        SettingsGCodeViewerTab,
+        SettingsGithubTab
     }
 })
 export default class TheSettingsMenu extends Mixins(BaseMixin) {
@@ -136,7 +139,12 @@ export default class TheSettingsMenu extends Mixins(BaseMixin) {
                 icon: 'mdi-video-3d',
                 name: 'g-code-viewer',
                 title: this.$t('Settings.GCodeViewerTab.GCodeViewer')
-            }
+            },
+            {
+                icon: 'mdi-github',
+                name: 'github',
+                title: this.$t('Settings.GithubTab.Github')
+            },
         ]
     }
 

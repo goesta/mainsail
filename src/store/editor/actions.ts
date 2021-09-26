@@ -72,6 +72,9 @@ export const actions: ActionTree<EditorState, RootState> = {
     },
 
     async saveFile({ state, commit, rootGetters, dispatch }, payload: { content: string, restartServiceName: string | null }) {
+        const filePath = `${state.fileroot}${state.filepath}/${state.filename}`
+        dispatch('github/prepareGithubCommit', {content: payload.content, path: filePath}, { root: true })
+
         const content = new Blob([payload.content], { type: 'text/plain' })
         const formData = new FormData()
         formData.append('file', content, state.filename)

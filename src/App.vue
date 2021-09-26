@@ -32,6 +32,8 @@
         <the-connecting-dialog v-else></the-connecting-dialog>
         <the-update-dialog></the-update-dialog>
         <the-editor></the-editor>
+        <the-github-commit-dialog></the-github-commit-dialog>
+
     </v-app>
 </template>
 
@@ -45,6 +47,7 @@ import TheUpdateDialog from '@/components/TheUpdateDialog.vue'
 import TheConnectingDialog from '@/components/TheConnectingDialog.vue'
 import TheSelectPrinterDialog from '@/components/TheSelectPrinterDialog.vue'
 import TheEditor from '@/components/TheEditor.vue'
+import TheGithubCommitDialog from '@/components/TheGithubCommitDialog.vue'
 
 @Component({
     components: {
@@ -54,6 +57,7 @@ import TheEditor from '@/components/TheEditor.vue'
         TheUpdateDialog,
         TheTopbar,
         TheSidebar,
+        TheGithubCommitDialog
     }
 })
 export default class App extends Mixins(BaseMixin) {
